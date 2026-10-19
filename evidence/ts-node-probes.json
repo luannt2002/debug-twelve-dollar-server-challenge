@@ -1,0 +1,61 @@
+{
+  "runtime": {
+    "node": "v24.16.0",
+    "platform": "linux",
+    "arch": "x64"
+  },
+  "sourcePath": "snapshots/pr-78/submissions/node-net-barrard/index.js",
+  "httpParser": [
+    {
+      "name": "conflicting_content_length",
+      "bytes": 58,
+      "result": null
+    },
+    {
+      "name": "transfer_encoding_with_content_length",
+      "bytes": 67,
+      "result": {
+        "method": "POST",
+        "length": 2,
+        "chunked": true
+      }
+    },
+    {
+      "name": "complete_oversized_header",
+      "bytes": 9023,
+      "result": {
+        "method": "GET",
+        "length": 0,
+        "chunked": false
+      }
+    }
+  ],
+  "feedOrdering": {
+    "byId": [
+      2,
+      1
+    ],
+    "byTimestamp": [
+      1,
+      2
+    ]
+  },
+  "transactionVisibility": {
+    "sameConnectionBeforeCommit": 1,
+    "afterRollback": 0,
+    "scope": "SQLite semantics only; not an end-to-end Deno poller or fault-injection test"
+  },
+  "unicode": {
+    "utf16Units": 1000,
+    "codePoints": 500
+  },
+  "utf8Chunks": {
+    "splitBufferDecoded": "���",
+    "wholeBufferDecoded": "😀"
+  },
+  "i32Illustration": {
+    "input": 4294967297,
+    "jsBitwiseI32": 1,
+    "scope": "JavaScript illustrative coercion only; Deno FFI and C cast not executed"
+  }
+}

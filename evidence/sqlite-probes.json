@@ -1,0 +1,63 @@
+{
+  "sqlite_version": "3.45.1",
+  "checks": [
+    {
+      "name": "foreign_keys_default",
+      "enabled": 0,
+      "orphan_inserted": true
+    },
+    {
+      "name": "foreign_keys_enabled",
+      "orphan_rejected": true
+    },
+    {
+      "name": "read_during_write_batch",
+      "same_connection_count": 1,
+      "other_connection_count": 0,
+      "after_rollback": 0
+    },
+    {
+      "name": "pinned_read_snapshot",
+      "before": 1,
+      "after_external_commit": 1,
+      "after_reader_commit": 2
+    },
+    {
+      "name": "feed_query_plan",
+      "plan": [
+        [
+          6,
+          0,
+          0,
+          "SCAN p USING INDEX posts_created_at_id_idx"
+        ],
+        [
+          9,
+          0,
+          0,
+          "SEARCH u USING INTEGER PRIMARY KEY (rowid=?)"
+        ],
+        [
+          17,
+          0,
+          0,
+          "CORRELATED SCALAR SUBQUERY 1"
+        ],
+        [
+          22,
+          17,
+          0,
+          "SEARCH l USING COVERING INDEX likes_post_id_idx (post_id=?)"
+        ]
+      ]
+    },
+    {
+      "name": "statement_constraint_error",
+      "successful_peer_committed": true
+    },
+    {
+      "name": "exclusive_second_connection",
+      "result": "database is locked"
+    }
+  ]
+}

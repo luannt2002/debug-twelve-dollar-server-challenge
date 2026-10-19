@@ -1,0 +1,82 @@
+{
+  "boundary": "isolated Bun HTTP+SQLite fixture and compiler negative case; no throughput measurement",
+  "checks": {
+    "ts7_version": {
+      "command": [
+        "./labs/toolchain/node_modules/.bin/tsc",
+        "--version"
+      ],
+      "exit_code": 0,
+      "stdout": "Version 6.0.3",
+      "stderr": ""
+    },
+    "bun_version": {
+      "command": [
+        "./labs/toolchain/node_modules/.bin/bun",
+        "--version"
+      ],
+      "exit_code": 0,
+      "stdout": "1.4.3",
+      "stderr": ""
+    },
+    "ts6_version": {
+      "command": [
+        "./labs/toolchain/node_modules/.bin/tsc6",
+        "--version"
+      ],
+      "exit_code": 0,
+      "stdout": "Version 6.0.3",
+      "stderr": ""
+    },
+    "ts7_valid": {
+      "command": [
+        "./labs/toolchain/node_modules/.bin/tsc",
+        "-p",
+        "tsconfig.json"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    "bun_valid": {
+      "command": [
+        "./labs/toolchain/node_modules/.bin/bun",
+        "run",
+        "valid.ts"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"status\":200,\"data\":{\"value\":42}}",
+      "stderr": ""
+    },
+    "bun_invalid_type": {
+      "command": [
+        "./labs/toolchain/node_modules/.bin/bun",
+        "run",
+        "invalid.ts"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"value\":\"runtime string\",\"runtimeType\":\"string\"}",
+      "stderr": ""
+    },
+    "ts7_invalid_type": {
+      "command": [
+        "./labs/toolchain/node_modules/.bin/tsc",
+        "-p",
+        "tsconfig.json"
+      ],
+      "exit_code": 2,
+      "stdout": "invalid.ts(2,7): error TS2322: Type 'string' is not assignable to type 'number'.",
+      "stderr": ""
+    },
+    "ts6_invalid_type": {
+      "command": [
+        "./labs/toolchain/node_modules/.bin/tsc6",
+        "-p",
+        "tsconfig.json"
+      ],
+      "exit_code": 2,
+      "stdout": "invalid.ts(2,7): error TS2322: Type 'string' is not assignable to type 'number'.",
+      "stderr": ""
+    }
+  }
+}

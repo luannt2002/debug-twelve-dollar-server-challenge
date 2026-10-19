@@ -1,0 +1,1127 @@
+[
+  {
+    "pr": 1,
+    "sha": "71d67de0e49b2152a558b41b997e9bdd918493a2",
+    "ref": "refs/remotes/origin/pr/1",
+    "submissions": [
+      "python-fastapi-cknutson12"
+    ]
+  },
+  {
+    "pr": 10,
+    "sha": "606970b8c9c85bcebf299f7208a99525d4d6aa23",
+    "ref": "refs/remotes/origin/pr/10",
+    "submissions": [
+      "python-fastapi-tejasnafde",
+      "python-fastapi-cknutson12"
+    ]
+  },
+  {
+    "pr": 100,
+    "sha": "b9fd89d7ef3fd167488860c7acc79559991a1afc",
+    "ref": "refs/remotes/origin/pr/100",
+    "submissions": [
+      "python-fastapi-cknutson12",
+      "go-nethttp-mattn-vedic"
+    ]
+  },
+  {
+    "pr": 101,
+    "sha": "5f28c964ec5da7d3216f497eaa1bbe5bc454fdc1",
+    "ref": "refs/remotes/origin/pr/101",
+    "submissions": [
+      "python-fastapi-cknutson12",
+      "java-raw-agrison"
+    ]
+  },
+  {
+    "pr": 102,
+    "sha": "6b54cfd6fad685d00b705ea34a643a39827a39ac",
+    "ref": "refs/remotes/origin/pr/102",
+    "submissions": [
+      "python-fastapi-cknutson12",
+      "node-uwebsockets-zahidcakici"
+    ]
+  },
+  {
+    "pr": 103,
+    "sha": "896434055ff5278bead6112da223c5bb0670f982",
+    "ref": "refs/remotes/origin/pr/103",
+    "submissions": [
+      "python-fastapi-cknutson12",
+      "go-gin-lincolng4"
+    ]
+  },
+  {
+    "pr": 104,
+    "sha": "ef2e06222218d6bac1956ff6d4d21a7c62da1fb2",
+    "ref": "refs/remotes/origin/pr/104",
+    "submissions": [
+      "python-fastapi-cknutson12",
+      "haskell-warp-staticfx"
+    ]
+  },
+  {
+    "pr": 106,
+    "sha": "6cb31d973d197c366585514f274ebfad6b58daf0",
+    "ref": "refs/remotes/origin/pr/106",
+    "submissions": [
+      "python-fastapi-cknutson12",
+      "go-fasthttp-savak1990"
+    ]
+  },
+  {
+    "pr": 107,
+    "sha": "eb09a0fa752129dce8c7feb861355ca380f4cce1",
+    "ref": "refs/remotes/origin/pr/107",
+    "submissions": [
+      "python-fastapi-cknutson12",
+      "scala-netty-jacksonhoran"
+    ]
+  },
+  {
+    "pr": 108,
+    "sha": "ce63f0eaa5874b549af3f4b648dbfe2a5b3d9bde",
+    "ref": "refs/remotes/origin/pr/108",
+    "submissions": [
+      "fsharp-oxpecker-delneg",
+      "python-fastapi-cknutson12"
+    ]
+  },
+  {
+    "pr": 109,
+    "sha": "ea29475a6b6397487651d046385085315926dff4",
+    "ref": "refs/remotes/origin/pr/109",
+    "submissions": [
+      "python-granian-hoopengo"
+    ]
+  },
+  {
+    "pr": 11,
+    "sha": "83a51a2dd6b82434d01da25c9471725946e741a9",
+    "ref": "refs/remotes/origin/pr/11",
+    "submissions": [
+      "python-fastapi-cknutson12",
+      "erlang-cowboy-tbsvttr"
+    ]
+  },
+  {
+    "pr": 110,
+    "sha": "cdcf6570352455bb84fd286e4007c9423514c676",
+    "ref": "refs/remotes/origin/pr/110",
+    "submissions": [
+      "python-fastapi-cknutson12",
+      "nim-io_uring-NioHast"
+    ]
+  },
+  {
+    "pr": 111,
+    "sha": "3f3703cf020f48fdd9c9f42108c6903f437edd48",
+    "ref": "refs/remotes/origin/pr/111",
+    "submissions": [
+      "python-fastapi-cknutson12",
+      "go-epoll-brady1408"
+    ]
+  },
+  {
+    "pr": 112,
+    "sha": "f3afa25403ac5ee2a2030337de1afd635cd6ab65",
+    "ref": "refs/remotes/origin/pr/112",
+    "submissions": [
+      "python-fastapi-cknutson12",
+      "c-iouring-ssmurfgg04-gif"
+    ]
+  },
+  {
+    "pr": 113,
+    "sha": "5bbdb17458cda454d3e7803d05928ffb229c280b",
+    "ref": "refs/remotes/origin/pr/113",
+    "submissions": [
+      "python-fastapi-cknutson12",
+      "v-epoll-i098"
+    ]
+  },
+  {
+    "pr": 114,
+    "sha": "cf07ad80b3defdc528a655b287e945911fd1d370",
+    "ref": "refs/remotes/origin/pr/114",
+    "submissions": [
+      "python-fastapi-cknutson12",
+      "rust-axum-mjc"
+    ]
+  },
+  {
+    "pr": 115,
+    "sha": "ae7d1ded86215d7920e8223acbb35b7d67d24ac8",
+    "ref": "refs/remotes/origin/pr/115",
+    "submissions": [
+      "python-fastapi-cknutson12",
+      "ailang-native-2paws"
+    ]
+  },
+  {
+    "pr": 116,
+    "sha": "dec93c5cd7745765c2a784949344789ebc69fd93",
+    "ref": "refs/remotes/origin/pr/116",
+    "submissions": [
+      "python-fastapi-cknutson12",
+      "java-micronaut-Clickin"
+    ]
+  },
+  {
+    "pr": 117,
+    "sha": "b22615f59a00b0b051064f2f1790a07e693a15d8",
+    "ref": "refs/remotes/origin/pr/117",
+    "submissions": [
+      "python-fastapi-cknutson12",
+      "fortran-microhttpd-tbsvttr",
+      "asm-epoll-umitaltintas"
+    ]
+  },
+  {
+    "pr": 118,
+    "sha": "e4fcf8fa1452d3fa7a7e13195fb95860806ef1fc",
+    "ref": "refs/remotes/origin/pr/118",
+    "submissions": [
+      "python-fastapi-cknutson12",
+      "fortran-microhttpd-tbsvttr",
+      "python-stdlib-shawal-mbalire"
+    ]
+  },
+  {
+    "pr": 119,
+    "sha": "7b330d73fc7fdb0bb6d51f176189f1a0f8cc1a3b",
+    "ref": "refs/remotes/origin/pr/119",
+    "submissions": [
+      "python-fastapi-cknutson12",
+      "fortran-microhttpd-tbsvttr",
+      "typescript-deno-JakeAve"
+    ]
+  },
+  {
+    "pr": 12,
+    "sha": "8855078ec587763a2cfcc5b8144aa5f3d3ebae88",
+    "ref": "refs/remotes/origin/pr/12",
+    "submissions": [
+      "python-fastapi-cknutson12",
+      "ruby-rails-tbsvttr"
+    ]
+  },
+  {
+    "pr": 120,
+    "sha": "6cf3603630e1b762a60ea07dd4aeadeb8f4ed5f9",
+    "ref": "refs/remotes/origin/pr/120",
+    "submissions": [
+      "python-fastapi-cknutson12",
+      "nim-io_uring-NioHast"
+    ]
+  },
+  {
+    "pr": 121,
+    "sha": "315df90113281bfd9e78a62c1999a12e6d671370",
+    "ref": "refs/remotes/origin/pr/121",
+    "submissions": [
+      "c-libco-ssmurfgg04-gif",
+      "python-fastapi-cknutson12",
+      "c-iouring-ssmurfgg04-gif"
+    ]
+  },
+  {
+    "pr": 122,
+    "sha": "3208c81c1eeb8c696933c2c4612f35105ba97ce0",
+    "ref": "refs/remotes/origin/pr/122",
+    "submissions": [
+      "python-fastapi-cknutson12",
+      "fortran-microhttpd-tbsvttr",
+      "asm-epoll-HauLTCE"
+    ]
+  },
+  {
+    "pr": 123,
+    "sha": "b8bd4b2e5b302d81a0bac32bd38a4bb6c258b0e2",
+    "ref": "refs/remotes/origin/pr/123",
+    "submissions": [
+      "python-fastapi-cknutson12",
+      "d-arsd-hybridcgi-cyrusmsk",
+      "d-vibe-http-cyrusmsk",
+      "d-arsd-threadedcgi-cyrusmsk"
+    ]
+  },
+  {
+    "pr": 124,
+    "sha": "87bc21cbdb03bd2470c75c0a3a697c4ccd51ebf8",
+    "ref": "refs/remotes/origin/pr/124",
+    "submissions": [
+      "python-fastapi-cknutson12",
+      "fortran-microhttpd-tbsvttr",
+      "java-springboot-bogdan-blaj"
+    ]
+  },
+  {
+    "pr": 125,
+    "sha": "a08923d7ea1cdfa5ccf9b4d4985380caaa4d43b4",
+    "ref": "refs/remotes/origin/pr/125",
+    "submissions": [
+      "python-fastapi-cknutson12",
+      "fortran-microhttpd-tbsvttr",
+      "zig-iouring-marler8997"
+    ]
+  },
+  {
+    "pr": 126,
+    "sha": "7c373ddc6e15f0e7056a375a3ba0e898c0a82cc7",
+    "ref": "refs/remotes/origin/pr/126",
+    "submissions": [
+      "lua-lunet-simbo1905",
+      "python-fastapi-cknutson12",
+      "fortran-microhttpd-tbsvttr"
+    ]
+  },
+  {
+    "pr": 127,
+    "sha": "0ca36cd617f9b8812ee5bb84fa7f2b0ab939bd2c",
+    "ref": "refs/remotes/origin/pr/127",
+    "submissions": [
+      "python-fastapi-cknutson12",
+      "node-httpserver-aliskhanoff",
+      "fortran-microhttpd-tbsvttr"
+    ]
+  },
+  {
+    "pr": 128,
+    "sha": "4ea331f31353e2f6d5a4540b186f97ef51963fc0",
+    "ref": "refs/remotes/origin/pr/128",
+    "submissions": [
+      "python-fastapi-cknutson12",
+      "fortran-microhttpd-tbsvttr",
+      "kotlin-trikeshed-jnorthrup"
+    ]
+  },
+  {
+    "pr": 13,
+    "sha": "825048080634a9b43d329b6597623ffe34d3c240",
+    "ref": "refs/remotes/origin/pr/13",
+    "submissions": [
+      "python-granian-tbsvttr",
+      "python-fastapi-cknutson12"
+    ]
+  },
+  {
+    "pr": 14,
+    "sha": "4eaabd8ff706997bd5e9e211ab85c78d1dcfad5e",
+    "ref": "refs/remotes/origin/pr/14",
+    "submissions": [
+      "python-fastapi-cknutson12",
+      "ruby-iodine-tbsvttr"
+    ]
+  },
+  {
+    "pr": 15,
+    "sha": "67fedf39ce4c385b7d48d3aadd488140be453929",
+    "ref": "refs/remotes/origin/pr/15",
+    "submissions": [
+      "python-fastapi-cknutson12",
+      "cpp-uwebsockets-v2-tbsvttr"
+    ]
+  },
+  {
+    "pr": 16,
+    "sha": "b887fd1fa882f60988d004c75911048b902bf6f7",
+    "ref": "refs/remotes/origin/pr/16",
+    "submissions": [
+      "python-fastapi-cknutson12",
+      "fortran-microhttpd-tbsvttr"
+    ]
+  },
+  {
+    "pr": 17,
+    "sha": "bc776417d1ef8ef5d99037adec7d172c8038098c",
+    "ref": "refs/remotes/origin/pr/17",
+    "submissions": [
+      "rust-axum-tbsvttr",
+      "python-fastapi-cknutson12"
+    ]
+  },
+  {
+    "pr": 18,
+    "sha": "a3845fc52677b55394d5ff2045f5945d2c3ba273",
+    "ref": "refs/remotes/origin/pr/18",
+    "submissions": [
+      "python-fastapi-cknutson12",
+      "go-nethttp-tbsvttr"
+    ]
+  },
+  {
+    "pr": 19,
+    "sha": "bd517fa7c8a57b135579ae02fdddb6196b4cd9a4",
+    "ref": "refs/remotes/origin/pr/19",
+    "submissions": [
+      "python-fastapi-cknutson12",
+      "rust-epoll-scooter1337"
+    ]
+  },
+  {
+    "pr": 2,
+    "sha": "33dd92f6bc13d4b4a78e2ef3f50467fca2fc52cc",
+    "ref": "refs/remotes/origin/pr/2",
+    "submissions": [
+      "ruby-rails-gambitboy",
+      "python-fastapi-cknutson12"
+    ]
+  },
+  {
+    "pr": 20,
+    "sha": "d2ea5d8c7225eb640e07a65cb2c951b271d10e63",
+    "ref": "refs/remotes/origin/pr/20",
+    "submissions": [
+      "python-fastapi-cknutson12",
+      "csharp-aspnetcore-andrexx"
+    ]
+  },
+  {
+    "pr": 21,
+    "sha": "0b20a77593cac9cd4e2d0e8f499332f6d1b7e671",
+    "ref": "refs/remotes/origin/pr/21",
+    "submissions": [
+      "python-fastapi-cknutson12",
+      "cpp-epoll-memstore-khalefa-ow"
+    ]
+  },
+  {
+    "pr": 22,
+    "sha": "9761ec4c78f849f73526c6ff16b7c528eb26ffd3",
+    "ref": "refs/remotes/origin/pr/22",
+    "submissions": [
+      "python-fastapi-cknutson12",
+      "rust-axum-SvetlinZarev"
+    ]
+  },
+  {
+    "pr": 23,
+    "sha": "815a8ff96c18091a5d7fcedbccb95c4fa9173623",
+    "ref": "refs/remotes/origin/pr/23",
+    "submissions": [
+      "python-fastapi-cknutson12",
+      "python-litestar-przwr"
+    ]
+  },
+  {
+    "pr": 24,
+    "sha": "eed3bd3d2f776e9ce0ee490c57a1367336a8c4a4",
+    "ref": "refs/remotes/origin/pr/24",
+    "submissions": [
+      "python-fastapi-cknutson12",
+      "php-swoole-mattsplat"
+    ]
+  },
+  {
+    "pr": 25,
+    "sha": "a2ff9cfc34d5667fc12befdb328252c94100df79",
+    "ref": "refs/remotes/origin/pr/25",
+    "submissions": [
+      "python-fastapi-cknutson12",
+      "zig-usockets-tbsvttr"
+    ]
+  },
+  {
+    "pr": 26,
+    "sha": "35cc55c85fa837cd703367a740e0b8eeb6b825b4",
+    "ref": "refs/remotes/origin/pr/26",
+    "submissions": [
+      "python-fastapi-cknutson12",
+      "c-iouring-raoz"
+    ]
+  },
+  {
+    "pr": 27,
+    "sha": "6bb4bc5dfb4ebf7778598631fb010d9426179e16",
+    "ref": "refs/remotes/origin/pr/27",
+    "submissions": [
+      "python-fastapi-cknutson12",
+      "csharp-aspnetcore-maks-march"
+    ]
+  },
+  {
+    "pr": 28,
+    "sha": "e3d3e0e036fcfc924a3200a7227a2467d6817a7a",
+    "ref": "refs/remotes/origin/pr/28",
+    "submissions": [
+      "python-fastapi-cknutson12",
+      "php-swoole-tzimpel"
+    ]
+  },
+  {
+    "pr": 29,
+    "sha": "1efb7c92278f65d3209884c723cc87d95a6bc6f7",
+    "ref": "refs/remotes/origin/pr/29",
+    "submissions": [
+      "python-fastapi-cknutson12",
+      "cpp-drogon-hendy643"
+    ]
+  },
+  {
+    "pr": 3,
+    "sha": "cfe31fc20f89836c4e432b660c689c19dea97d27",
+    "ref": "refs/remotes/origin/pr/3",
+    "submissions": [
+      "typescript-bun-xxmohamed012",
+      "python-fastapi-cknutson12"
+    ]
+  },
+  {
+    "pr": 31,
+    "sha": "80f16f6a293fcac3096d32f9dc4a8dca0c75abf4",
+    "ref": "refs/remotes/origin/pr/31",
+    "submissions": [
+      "r-plumber2-josiahparry",
+      "python-fastapi-cknutson12"
+    ]
+  },
+  {
+    "pr": 32,
+    "sha": "647f962dc2eab8fc64e2f112728ac5dfb20154c5",
+    "ref": "refs/remotes/origin/pr/32",
+    "submissions": [
+      "python-fastapi-cknutson12",
+      "cpp-eastl-io_uring-pgo-hendy643"
+    ]
+  },
+  {
+    "pr": 33,
+    "sha": "5300ca9105fca097ba8839a51cb7e6d86b61ed37",
+    "ref": "refs/remotes/origin/pr/33",
+    "submissions": [
+      "python-fastapi-cknutson12",
+      "java-spring-boot-nb-99"
+    ]
+  },
+  {
+    "pr": 34,
+    "sha": "9e04781b3ced1251d0bbc197e4babd2503b50275",
+    "ref": "refs/remotes/origin/pr/34",
+    "submissions": [
+      "python-fastapi-cknutson12",
+      "go-rr-sirkostya009"
+    ]
+  },
+  {
+    "pr": 35,
+    "sha": "880310aec7f1d6908e66dbc606769d0a3c5fb780",
+    "ref": "refs/remotes/origin/pr/35",
+    "submissions": [
+      "python-fastapi-cknutson12",
+      "baml-http-hellovai"
+    ]
+  },
+  {
+    "pr": 36,
+    "sha": "22a4436e80c275c798cf3d40180fb81acf9fd016",
+    "ref": "refs/remotes/origin/pr/36",
+    "submissions": [
+      "python-fastapi-cknutson12",
+      "kotlin-ktor-jvm-syorito-hatsuki"
+    ]
+  },
+  {
+    "pr": 37,
+    "sha": "08ac9a40c58e44d1538fab23862b400c29f17ecb",
+    "ref": "refs/remotes/origin/pr/37",
+    "submissions": [
+      "python-fastapi-cknutson12"
+    ]
+  },
+  {
+    "pr": 38,
+    "sha": "8fe4cb032ab1875193bc3d5c8ec68e4ac7ef088a",
+    "ref": "refs/remotes/origin/pr/38",
+    "submissions": [
+      "go-gnet-Haris0059",
+      "python-fastapi-cknutson12"
+    ]
+  },
+  {
+    "pr": 39,
+    "sha": "71b98db511b9c20ffa9ecff3c9adeedbc9ccfcdc",
+    "ref": "refs/remotes/origin/pr/39",
+    "submissions": [
+      "python-fastapi-cknutson12",
+      "c-h2o-einhornimmond"
+    ]
+  },
+  {
+    "pr": 4,
+    "sha": "970d6079914330030add382d381e32bcb41ddb04",
+    "ref": "refs/remotes/origin/pr/4",
+    "submissions": [
+      "python-fastapi-cknutson12",
+      "typescript-bun-tbsvttr"
+    ]
+  },
+  {
+    "pr": 40,
+    "sha": "d7d5d1aa99fff179238d2be1495118316d44c4b9",
+    "ref": "refs/remotes/origin/pr/40",
+    "submissions": [
+      "python-fastapi-cknutson12",
+      "php-symfony-pklebba"
+    ]
+  },
+  {
+    "pr": 41,
+    "sha": "2878e8dffddfc2fe36409bb037264048f7486abd",
+    "ref": "refs/remotes/origin/pr/41",
+    "submissions": [
+      "python-fastapi-cknutson12",
+      "python-fastapi-granian-shawal-mbalire"
+    ]
+  },
+  {
+    "pr": 42,
+    "sha": "bb05a6f52932e955954393aba5fa681a09f9f780",
+    "ref": "refs/remotes/origin/pr/42",
+    "submissions": [
+      "python-fastapi-cknutson12",
+      "c-epoll-benclawbot"
+    ]
+  },
+  {
+    "pr": 43,
+    "sha": "a23a42696181ebeaf0b93c01e6296325c7e64370",
+    "ref": "refs/remotes/origin/pr/43",
+    "submissions": [
+      "python-fastapi-cknutson12",
+      "swift-hummingbird-denizak"
+    ]
+  },
+  {
+    "pr": 44,
+    "sha": "c5eba7b5c9fff27b5e428958bc3e45ebd1dc0375",
+    "ref": "refs/remotes/origin/pr/44",
+    "submissions": [
+      "python-fastapi-cknutson12",
+      "go-stdlib-vkrishna03"
+    ]
+  },
+  {
+    "pr": 45,
+    "sha": "a550cad21e1dcca3a3edcdad5a12a87437e5619a",
+    "ref": "refs/remotes/origin/pr/45",
+    "submissions": [
+      "python-fastapi-cknutson12",
+      "kotlin-ktor-C-Hatton"
+    ]
+  },
+  {
+    "pr": 46,
+    "sha": "07ae49d290b3cf94083d562631e82dee45421540",
+    "ref": "refs/remotes/origin/pr/46",
+    "submissions": [
+      "python-fastapi-cknutson12",
+      "dart-rawsocket-C-Hatton"
+    ]
+  },
+  {
+    "pr": 47,
+    "sha": "3448cf402a61968143de8de60cfe5b0051218ca8",
+    "ref": "refs/remotes/origin/pr/47",
+    "submissions": [
+      "python-fastapi-cknutson12",
+      "csharp-aspnetcore-larsholm"
+    ]
+  },
+  {
+    "pr": 48,
+    "sha": "5af07cb52fd12c5dc6312cc1a7ca80ae076a0103",
+    "ref": "refs/remotes/origin/pr/48",
+    "submissions": [
+      "python-fastapi-cknutson12",
+      "go-gnet-kaikegm"
+    ]
+  },
+  {
+    "pr": 49,
+    "sha": "591507d5c1f73b6b758e8b29c9d8fabbca6c94f1",
+    "ref": "refs/remotes/origin/pr/49",
+    "submissions": [
+      "python-fastapi-cknutson12",
+      "typescript-effect-SeeThruHead"
+    ]
+  },
+  {
+    "pr": 5,
+    "sha": "0037443c8ca4d49a426919c4c359993756975760",
+    "ref": "refs/remotes/origin/pr/5",
+    "submissions": [
+      "python-fastapi-cknutson12",
+      "c-fio-tbsvttr"
+    ]
+  },
+  {
+    "pr": 50,
+    "sha": "5f602c1602af15e8c190ed1b009bea286318dadc",
+    "ref": "refs/remotes/origin/pr/50",
+    "submissions": [
+      "python-fastapi-cknutson12",
+      "php-codeigniter-melroy89"
+    ]
+  },
+  {
+    "pr": 51,
+    "sha": "6ba12bd883c0198e48c252ded0f72f72ded99c1a",
+    "ref": "refs/remotes/origin/pr/51",
+    "submissions": [
+      "python-fastapi-cknutson12",
+      "typescript-fastify-melroy89"
+    ]
+  },
+  {
+    "pr": 52,
+    "sha": "1ca4d830e6a4cf070bca31d0fb6474553fe4c1cd",
+    "ref": "refs/remotes/origin/pr/52",
+    "submissions": [
+      "python-fastapi-cknutson12",
+      "go-epoll-damianoneill"
+    ]
+  },
+  {
+    "pr": 53,
+    "sha": "7e92d120fbf4c02b01595143de2f4c5826177ef3",
+    "ref": "refs/remotes/origin/pr/53",
+    "submissions": [
+      "python-fastapi-cknutson12",
+      "kotlin-ktor-graalvm-noamm9"
+    ]
+  },
+  {
+    "pr": 54,
+    "sha": "9310949809dc59759c06fbc0e6ce5ff9d69e8590",
+    "ref": "refs/remotes/origin/pr/54",
+    "submissions": [
+      "python-fastapi-cknutson12",
+      "c-ammarserver-AmmarkoV"
+    ]
+  },
+  {
+    "pr": 55,
+    "sha": "98b16d56372f751793a0ca5d518e2940094639e4",
+    "ref": "refs/remotes/origin/pr/55",
+    "submissions": [
+      "python-fastapi-cknutson12",
+      "c-iouring-einhornimmond"
+    ]
+  },
+  {
+    "pr": 56,
+    "sha": "f320dd37bd7c8b4c279dc49900816bc1a14262ab",
+    "ref": "refs/remotes/origin/pr/56",
+    "submissions": [
+      "go-fasthttp-b3nhard",
+      "python-fastapi-cknutson12"
+    ]
+  },
+  {
+    "pr": 57,
+    "sha": "6074d0264f46a7ea6421a28fdb51d04b5104e385",
+    "ref": "refs/remotes/origin/pr/57",
+    "submissions": [
+      "python-fastapi-cknutson12",
+      "java-netty-itsnaveenk"
+    ]
+  },
+  {
+    "pr": 58,
+    "sha": "0600708b01e9c550143da51583d240e83efa4614",
+    "ref": "refs/remotes/origin/pr/58",
+    "submissions": [
+      "python-fastapi-cknutson12",
+      "java-nio-stohirov"
+    ]
+  },
+  {
+    "pr": 59,
+    "sha": "24eac14fc568b583de67a80ea703320edf990c8b",
+    "ref": "refs/remotes/origin/pr/59",
+    "submissions": [
+      "python-fastapi-cknutson12",
+      "bun-elysia-shashishsoni"
+    ]
+  },
+  {
+    "pr": 6,
+    "sha": "d9238eaa4b107ff061aeecd1b7bcc1ae9fa89b48",
+    "ref": "refs/remotes/origin/pr/6",
+    "submissions": [
+      "python-fastapi-cknutson12",
+      "cpp-uwebsockets-tbsvttr"
+    ]
+  },
+  {
+    "pr": 60,
+    "sha": "92226df06a5bc9f450424a43ed24693a8be86394",
+    "ref": "refs/remotes/origin/pr/60",
+    "submissions": [
+      "csharp-iouring-megasware128",
+      "python-fastapi-cknutson12"
+    ]
+  },
+  {
+    "pr": 61,
+    "sha": "00fc4a9ad89f5d18f968d81dd67a2d8be0715e54",
+    "ref": "refs/remotes/origin/pr/61",
+    "submissions": [
+      "python-fastapi-cknutson12",
+      "node-fastify-gmr458"
+    ]
+  },
+  {
+    "pr": 63,
+    "sha": "4c86f79f4e7df83e9beaddb1d69d6a13461fc867",
+    "ref": "refs/remotes/origin/pr/63",
+    "submissions": [
+      "java-netty-lfeagan",
+      "python-fastapi-cknutson12"
+    ]
+  },
+  {
+    "pr": 64,
+    "sha": "efd2fa8772452142e94b642d490a753390011e64",
+    "ref": "refs/remotes/origin/pr/64",
+    "submissions": [
+      "python-fastapi-cknutson12",
+      "c-epoll-TheFirstIstari"
+    ]
+  },
+  {
+    "pr": 65,
+    "sha": "4aa3ddfaf31a44a8ada275d6fa1ade0149e71fe7",
+    "ref": "refs/remotes/origin/pr/65",
+    "submissions": [
+      "go-epoll-Antheurus",
+      "python-fastapi-cknutson12"
+    ]
+  },
+  {
+    "pr": 66,
+    "sha": "536593f87efdfc9440e6c374a86e630a58887cdb",
+    "ref": "refs/remotes/origin/pr/66",
+    "submissions": [
+      "python-fastapi-cknutson12",
+      "kotlin-springboot-Mindstorm1750"
+    ]
+  },
+  {
+    "pr": 67,
+    "sha": "633dedffcbf9a2776e3cacab6235f707df997ef4",
+    "ref": "refs/remotes/origin/pr/67",
+    "submissions": [
+      "python-fastapi-cknutson12",
+      "java-quarkus-wolches"
+    ]
+  },
+  {
+    "pr": 68,
+    "sha": "34d72571d456727b4b03e994d043db8539fab761",
+    "ref": "refs/remotes/origin/pr/68",
+    "submissions": [
+      "python-fastapi-cknutson12",
+      "c-iouring-27bhd"
+    ]
+  },
+  {
+    "pr": 69,
+    "sha": "913da3f19ba9b7fc7e36d9371d29031999f9e29c",
+    "ref": "refs/remotes/origin/pr/69",
+    "submissions": [
+      "python-fastapi-cknutson12",
+      "v-fasthttp-ulises-jeremias"
+    ]
+  },
+  {
+    "pr": 70,
+    "sha": "c926201c5fd0d35fda6090486797a4a197e5e453",
+    "ref": "refs/remotes/origin/pr/70",
+    "submissions": [
+      "python-fastapi-cknutson12",
+      "v-veb-ulises-jeremias"
+    ]
+  },
+  {
+    "pr": 71,
+    "sha": "469957f2bbdd6e7483d567c860378031154e6ac9",
+    "ref": "refs/remotes/origin/pr/71",
+    "submissions": [
+      "python-fastapi-cknutson12",
+      "ruby-async-cicloid"
+    ]
+  },
+  {
+    "pr": 72,
+    "sha": "9df7449fe8019051793291029b00db760f19f1fd",
+    "ref": "refs/remotes/origin/pr/72",
+    "submissions": [
+      "python-fastapi-cknutson12",
+      "go-epoll-MegaPanchamZ"
+    ]
+  },
+  {
+    "pr": 73,
+    "sha": "be4df7fff7dad80aeec4820bcc51f53702df0314",
+    "ref": "refs/remotes/origin/pr/73",
+    "submissions": [
+      "python-fastapi-cknutson12",
+      "java-quarkus-panama-raisinsfried"
+    ]
+  },
+  {
+    "pr": 74,
+    "sha": "2d589c43441d26dda0e90d4010f04ff5361232cd",
+    "ref": "refs/remotes/origin/pr/74",
+    "submissions": [
+      "csharp-epoll-gichamba",
+      "python-fastapi-cknutson12"
+    ]
+  },
+  {
+    "pr": 75,
+    "sha": "4b8ba1cc1bcb412273a0f577a7578da0ec3d3791",
+    "ref": "refs/remotes/origin/pr/75",
+    "submissions": [
+      "python-fastapi-cknutson12",
+      "asm-epoll-FlavouredTux"
+    ]
+  },
+  {
+    "pr": 76,
+    "sha": "6f72081de1b7708110dda428161339646ebf7e0d",
+    "ref": "refs/remotes/origin/pr/76",
+    "submissions": [
+      "python-fastapi-cknutson12",
+      "go-epoll-champ3oy"
+    ]
+  },
+  {
+    "pr": 77,
+    "sha": "356798f88ca7b9bcb5eb4afe5220f6103f2e7e8a",
+    "ref": "refs/remotes/origin/pr/77",
+    "submissions": [
+      "python-fastapi-cknutson12",
+      "csharp-aspnetcore-vijay-highlo"
+    ]
+  },
+  {
+    "pr": 78,
+    "sha": "a67c94c309c60381f425045686e1cab0fead8c92",
+    "ref": "refs/remotes/origin/pr/78",
+    "submissions": [
+      "python-fastapi-cknutson12",
+      "node-net-barrard"
+    ]
+  },
+  {
+    "pr": 79,
+    "sha": "76fb2198420411f4b5532a63eb559972c8c11f57",
+    "ref": "refs/remotes/origin/pr/79",
+    "submissions": [
+      "python-fastapi-cknutson12",
+      "pypy-twisted-perkinslr"
+    ]
+  },
+  {
+    "pr": 8,
+    "sha": "20ad0cc493da4b701d353abc484e2815156c476a",
+    "ref": "refs/remotes/origin/pr/8",
+    "submissions": [
+      "python-fastapi-cknutson12",
+      "cpp-epoll-khalefa-ow"
+    ]
+  },
+  {
+    "pr": 80,
+    "sha": "e39a91b3debb82e265734396b275427572f1841a",
+    "ref": "refs/remotes/origin/pr/80",
+    "submissions": [
+      "python-fastapi-cknutson12",
+      "bun-elysia-brocchirodrigo"
+    ]
+  },
+  {
+    "pr": 81,
+    "sha": "09d7d4342e285663dd3f69c316e90d56737b2b68",
+    "ref": "refs/remotes/origin/pr/81",
+    "submissions": [
+      "python-fastapi-cknutson12",
+      "java-springboot-brocchirodrigo"
+    ]
+  },
+  {
+    "pr": 82,
+    "sha": "95aa405a0003599dbc7fb4dfa47a09e8343239df",
+    "ref": "refs/remotes/origin/pr/82",
+    "submissions": [
+      "python-fastapi-cknutson12",
+      "rust-epoll-scooter1337"
+    ]
+  },
+  {
+    "pr": 83,
+    "sha": "38eb5434ec0401d09ace2a8f788d4a582bcf2788",
+    "ref": "refs/remotes/origin/pr/83",
+    "submissions": [
+      "python-fastapi-cknutson12",
+      "kotlin-nio-3x3xX3N0N"
+    ]
+  },
+  {
+    "pr": 84,
+    "sha": "87b92833c14d2a993b65a38c429512200dbb4fc5",
+    "ref": "refs/remotes/origin/pr/84",
+    "submissions": [
+      "python-fastapi-cknutson12",
+      "python-pypy-epoll-pranavds-codes"
+    ]
+  },
+  {
+    "pr": 85,
+    "sha": "00f7e75f9dbbfb4ebcb02f7a54aea581a3289bbb",
+    "ref": "refs/remotes/origin/pr/85",
+    "submissions": [
+      "python-fastapi-cknutson12",
+      "java-virtualthreads-Ahosan1Siam"
+    ]
+  },
+  {
+    "pr": 86,
+    "sha": "61eb6ed7395a1a99209500c7fde8408255c8b791",
+    "ref": "refs/remotes/origin/pr/86",
+    "submissions": [
+      "python-fastapi-cknutson12",
+      "asm-nasm-melroy89"
+    ]
+  },
+  {
+    "pr": 87,
+    "sha": "3afe6008402e3a90c3db02d7a0703dfcf844ab30",
+    "ref": "refs/remotes/origin/pr/87",
+    "submissions": [
+      "python-fastapi-cknutson12"
+    ]
+  },
+  {
+    "pr": 88,
+    "sha": "0600708b01e9c550143da51583d240e83efa4614",
+    "ref": "refs/remotes/origin/pr/88",
+    "submissions": [
+      "python-fastapi-cknutson12",
+      "java-nio-stohirov"
+    ]
+  },
+  {
+    "pr": 89,
+    "sha": "b44a32f07428b01a2940cda500f317d17fa75a32",
+    "ref": "refs/remotes/origin/pr/89",
+    "submissions": [
+      "python-fastapi-cknutson12",
+      "bash-socat-framegrace"
+    ]
+  },
+  {
+    "pr": 9,
+    "sha": "3d92a3b349bdf8abb0425fce990fdfb8ab7dfdc3",
+    "ref": "refs/remotes/origin/pr/9",
+    "submissions": [
+      "python-fastapi-cknutson12",
+      "cpp-epoll_inmem-khalefa-ow"
+    ]
+  },
+  {
+    "pr": 90,
+    "sha": "2c1db8a3691a9fbc7e752993b7921be28e1e13ad",
+    "ref": "refs/remotes/origin/pr/90",
+    "submissions": [
+      "python-fastapi-cknutson12",
+      "rust-actix-web-abeni-csa"
+    ]
+  },
+  {
+    "pr": 91,
+    "sha": "40a6861dfd0b8bb51924d56be92843f5a444aa63",
+    "ref": "refs/remotes/origin/pr/91",
+    "submissions": [
+      "python-fastapi-cknutson12",
+      "go-lowlevel-janso123"
+    ]
+  },
+  {
+    "pr": 92,
+    "sha": "72e7a9a568c11874b982b0a391bba1287b9555bf",
+    "ref": "refs/remotes/origin/pr/92",
+    "submissions": [
+      "python-fastapi-cknutson12",
+      "java-vertx-super-horst"
+    ]
+  },
+  {
+    "pr": 93,
+    "sha": "2e046680bdc89c4a5c802c1a2cef9bf269db61a5",
+    "ref": "refs/remotes/origin/pr/93",
+    "submissions": [
+      "python-fastapi-cknutson12",
+      "bash-builtin-framegrace",
+      "bash-socat-framegrace"
+    ]
+  },
+  {
+    "pr": 94,
+    "sha": "fbe2153cf0d8798012b46bbf51c5cbbeaaa79e82",
+    "ref": "refs/remotes/origin/pr/94",
+    "submissions": [
+      "python-fastapi-cknutson12",
+      "lua-openresty-yar0slav"
+    ]
+  },
+  {
+    "pr": 95,
+    "sha": "02e7ce7684b208532ee1c09337fdd2f1cfee7137",
+    "ref": "refs/remotes/origin/pr/95",
+    "submissions": [
+      "python-fastapi-cknutson12",
+      "csharp-aspnetcore-devv-guru"
+    ]
+  },
+  {
+    "pr": 96,
+    "sha": "180345e45d182c50cb8d0eea175b149305bd699b",
+    "ref": "refs/remotes/origin/pr/96",
+    "submissions": [
+      "python-fastapi-cknutson12",
+      "python-cython-adeland"
+    ]
+  },
+  {
+    "pr": 97,
+    "sha": "52d8d77c2433c33cc5c1693b45592c4c2b453d4f",
+    "ref": "refs/remotes/origin/pr/97",
+    "submissions": [
+      "python-fastapi-cknutson12",
+      "cpp-iouring-edwin-2024"
+    ]
+  },
+  {
+    "pr": 98,
+    "sha": "52d8d77c2433c33cc5c1693b45592c4c2b453d4f",
+    "ref": "refs/remotes/origin/pr/98",
+    "submissions": [
+      "python-fastapi-cknutson12",
+      "cpp-iouring-edwin-2024"
+    ]
+  },
+  {
+    "pr": 99,
+    "sha": "e1a5f05a78167e02b160398141b4115d955cd439",
+    "ref": "refs/remotes/origin/pr/99",
+    "submissions": [
+      "python-fastapi-cknutson12",
+      "go-nethttp-fi5HiE"
+    ]
+  }
+]

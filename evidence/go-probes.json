@@ -1,0 +1,5 @@
+{
+  "boundary": "original auth.go/http.go in isolated test, no full HTTP server",
+  "go": "go version go1.26.4 linux/amd64",
+  "output": "=== RUN   TestAuditFixture\nduplicate_CL status=1 consumed=75 body=\"{}\"\nfuture_nbf auth_status=0 user=1\n--- PASS: TestAuditFixture (0.00s)\nPASS\nok  \t_/tmp/tmpkvhtvv0h\t0.001s\n"
+}

@@ -1,0 +1,17 @@
+# Source bên ngoài được dựng lại từ manifest.
+/upstream/
+/snapshots/
+# Dependency, runtime và dữ liệu chỉ ở máy hiện tại.
+**/node_modules/
+**/__pycache__/
+/.local/
+/labs/**/output/
+*.db
+*.db-wal
+*.db-shm
+.env
+.env.*
+!.env.example
+# Artifact metadata GitHub thô giữ local; manifest gọn được commit.
+/evidence/pulls.json
+/luannt.md

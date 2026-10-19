@@ -1,0 +1,15 @@
+{
+  "date": "2026-10-19",
+  "upstream_head": "c72d994d302e23c9166ea54d5dfe7a238c79bb75",
+  "pr_heads": 124,
+  "unique_submission_dirs": 120,
+  "metadata_and_refs_match": true,
+  "local_markdown_links_exist": true,
+  "probe_json_valid": [
+    "sqlite-probes.json",
+    "cpp-parser-probes.json",
+    "go-probes.json",
+    "ts-node-probes.json"
+  ],
+  "upstream_worktree_clean": true
+}

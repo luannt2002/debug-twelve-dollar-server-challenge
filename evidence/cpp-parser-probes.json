@@ -1,0 +1,11 @@
+{
+  "source": "snapshots/pr-9/submissions/cpp-epoll_inmem-khalefa-ow/src/main.cpp",
+  "boundary": "extracted exact parser functions, not full server",
+  "enum": "kOk=0,kIncomplete=1,kBad=2",
+  "cases": [
+    "conflicting content-length",
+    "content-length and transfer-encoding",
+    "HTTP/9.9"
+  ],
+  "output": "0 75 2\n0 87 0\n0 31 0\n"
+}
