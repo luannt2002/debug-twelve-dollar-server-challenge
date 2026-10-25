@@ -1,0 +1,17 @@
+{
+  "checked_date": "2026-10-25",
+  "sources": [
+    {
+      "name": "chi",
+      "url": "https://github.com/go-chi/chi.git",
+      "sha": "9f8adb1aabaa8a91180a821111d3f8e668d1c0bf",
+      "scope": "router/middleware or pool/query/transaction lifecycle; not whole dependency audit"
+    },
+    {
+      "name": "pgx",
+      "url": "https://github.com/jackc/pgx.git",
+      "sha": "0dd05bbb034054476833c11856510cc20cbde049",
+      "scope": "router/middleware or pool/query/transaction lifecycle; not whole dependency audit"
+    }
+  ]
+}

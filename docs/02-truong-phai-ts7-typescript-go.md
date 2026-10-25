@@ -1,60 +1,57 @@
-# Trục 2 — TS 7 (typescript-go): tsc viết bằng Go, nhanh vì gì, KHÔNG đụng gì
+# TS7 viết bằng Go: compiler nhanh và runtime là hai phép đo
 
-Repo: [microsoft/typescript-go](https://github.com/microsoft/typescript-go) — công bố 11/3/2025,
-**TS 7.0 phát hành 8/7/2026**, npm đang ở dòng `typescript@7` (kiểm 19/10/2026; **TS 6 là dòng
-JS cuối cùng** — nguồn: devblog Microsoft + npm).
+## Kết luận
 
-## Nó làm nhanh cái gì
+TS7 kiểm kiểu/emit/build/editor; Bun chạy JavaScript sau khi xử lý cú pháp TS. Dùng cả hai được,
+nhưng compiler nhanh không làm request tự nhanh hơn. Một Bun app chạy trực tiếp `.ts` không
+gọi `tsc` trước mỗi request. Cú pháp mới vẫn phải được runtime hỗ trợ; không đúng khi nói Bun
+không bao giờ quan tâm phiên bản TS.
 
-Chỉ tầng **typecheck / build / editor** (`tsc --noEmit`, LSP, `tsc -b`). Số công bố của team
-(nguồn devblogs, **chưa đo lại trên máy này**): build nhanh **8–12x**; VS Code typecheck
-~77,8s → ~7,5s (~10x).
+## Luồng source đã đọc
 
-## Nó KHÔNG làm gì
+Snapshot `microsoft/typescript-go` SHA `89d5d5b2849a0db0957065889ca58536fa6d2e4a`:
 
-- **Runtime không nhanh hơn**: app TS của bạn vẫn chạy bằng Bun/Node trên JS emit. Không có
-  "app chạy bằng Go", không có binary Go từ code TS.
-- Request API không nhanh theo tỷ lệ build nhanh — hai bài toán độc lập (PERFORMANCE-AUDIT §5).
+1. `cmd/tsgo/main.go`: CLI → chọn LSP/API hoặc execute.CommandLine.
+2. `internal/execute/tsc.go`: phân nhánh compile thường và build project references.
+3. `internal/compiler/fileloader.go`: tải/resolve files với WorkGroup.
+4. `internal/parser/parser.go:135`: ParseSourceFile, tạo AST; đây là code compiler chạy khi build.
+5. `internal/compiler/checkerpool.go:305`: pool mặc định 4 checker, singleThreaded về 1, clamp theo số file và giới hạn; checker có lock/association theo file.
+6. `internal/compiler/program.go:669`: nhóm files theo checker để giảm contention/cache misses; diagnostics hợp nhất/sort; emit là bước riêng.
+7. `internal/core/workgroup.go`: đường parallel dùng goroutine/WaitGroup; đường single giữ việc tuần tự.
 
-→ Trả lời luôn câu "TS 7 có Bun hay không có Bun": **Bun vẫn giữ nguyên vai trò runtime; TS 7
-chỉ thay `tsc`.** Hai cái ghép trực tiếp, không giẫm nhau vì Bun không gọi tsc khi chạy file.
+Đã đọc các điểm điều phối này, chưa audit từng quy tắc trong checker, toàn bộ LSP/watch và mọi dependency.
+Snapshot archive có thể khác compiler npm phát hành. Source có --api không chứng minh API đó là hợp đồng public ổn định.
 
-## Vì sao viết bằng Go lại nhanh được (bùa chú cụ thể)
+Lợi ích có cơ sở: native execution, song song hóa và tổ chức công việc/cache locality. Không có số đo ở đây
+để quy bao nhiêu phần trăm cho GC, struct hay allocation; tránh khẳng định “GC rẻ hơn nhiều” chỉ từ việc đổi ngôn ngữ.
+Launcher npm được đọc dùng Node execve/execFileSync để gọi executable: “không startup Node” không đúng với mọi đường gọi.
 
-1. **Song song thật**: scanner/parser/checker chia việc qua goroutines — tsc JS vốn bị khóa một
-   luồng event loop cho phần lớn khâu.
-2. **GC áp lực thấp hơn nhiều**: AST của kho lớn là hàng chục triệu object JS nằm trên heap Node;
-   struct Go cấp phát dự đoán được, GC quét rẻ hơn.
-3. **Dữ liệu liền mạch, ít con trỏ gián tiếp**: symbol links dạng array thay object graph —
-   cache-friendly (cùng mẫu với [docs/00 §7-8](00-nguyen-ly-hieu-nang.md)).
-4. **Binary native**: không startup Node, không JIT warmup, không `node_modules` để chạy tsc.
+## Nguồn và phiên bản
 
-Không phải "Go thần thánh" — là kiến trúc song song + giảm allocation, dùng đúng đặc tính Go
-(goroutine, struct). Chính pattern này là case học cho đợt 2 (tách service Go).
+[Repo archive](https://github.com/microsoft/typescript-go) hướng về
+[TypeScript chính](https://github.com/microsoft/TypeScript).
+[Thông báo TS7](https://devblogs.microsoft.com/typescript/announcing-typescript-7-0/) mô tả defaults,
+parallelism và giới hạn API thời điểm 7.0; số nhanh hơn do Microsoft công bố là số của họ, chưa đo lại.
+[Bun TypeScript](https://bun.com/docs/runtime/typescript) hướng dẫn types bun và bundler resolution.
+Không coi lịch 7.1 hoặc trạng thái từng tool trong bài pasted là hiện trạng đã kiểm chứng.
 
-## Breaking changes cần biết (nguồn devblog/báo cáo TS 7)
+## Cấu hình và migration
 
-| Đổi gì | Ảnh hưởng | Việc phải làm |
-|---|---|---|
-| Gỡ `moduleResolution: node` / `node10` | tsconfig cũ vỡ | dùng `bundler` / `node16` / `nodenext` (bun init mặc định `bundler`) |
-| `types` mặc định rỗng `[]` | `Bun.serve()`, `Bun.file()`… báo thiếu kiểu | khai báo `"types": ["bun"]` + cài `@types/bun` |
-| Compiler API đổi | typescript-eslint, ts-morph, ts-jest vỡ | đợi bản hỗ trợ 7.1+; tạm thời chạy song song TS 6 (alias `@typescript/typescript6`) |
+Pin compiler/runtime/typings, khai báo types bun, module Preserve, resolution bundler, strict và noEmit
+như `labs/toolchain/tsconfig.json`. Với service Node phải chọn resolution/module theo deployment Node.
+TS7 đổi defaults và bỏ một số config cũ; nâng theo diagnostic thực. Tool dùng compiler API cần
+kiểm từng version: alias TS6 có thể giữ API cũ, nhưng 7.1 xuất hiện không tự làm mọi integration tương thích.
 
-## Cấu hình chuẩn với Bun (copy cho đợt 1)
+## Bằng chứng local đang có
 
-Xem [setup/env.md §2](../setup/env.md) — `bun add -d typescript@7 @types/bun`,
-`moduleResolution: bundler`, `types: ["bun"]`, script `typecheck: tsc --noEmit`,
-CI chạy `bun run typecheck`, app chạy `bun run src/index.ts`.
+`evidence/toolchain-probes.json` từ lượt trước mang nhãn ts7 nhưng stdout tsc và tsc6 đều là
+**Version 6.0.3** dù manifest yêu cầu 7.0.2/6.0.2. Vì thế chưa xác nhận native TS7 thực chạy.
+Fixture chứng minh Bun trả HTTP200 với SQLite42 và vẫn chạy biến sai annotation; compiler báo TS2322.
+Không dùng fixture nhỏ này để tuyên bố build tăng tốc hoặc TS7/Bun thắng stack khác.
+Script probe đã bổ sung kiểm version để chặn nhãn sai ở lần chạy tiếp.
 
-## Tactic debug dự án cũ với TS 7
+## Thí nghiệm tiếp theo
 
-1. **Dùng TS 7 làm đèn soi nhanh**: typecheck toàn kho 10x nhanh hơn → nhận dự án lạ, chạy
-   `tsc --noEmit` trước để thấy toàn bộ nợ kiểu trong vài giây-chục giây thay vì vài phút.
-2. Giữ TS 6 song song cho tool chưa nâng (eslint/ts-jest) — không cần chờ 7.1 mới bắt đầu.
-3. Pin `typescript@7.0.x` đầu dòng — bản 7.x đầu có thể dính bug; ghi version vào evidence khi đo.
-
-## Tóm một dòng
-
-TS 7 = tsc native: **cùng ngữ cảnh kiểm kiểu, nhanh hơn ~10x (số công bố)** vì song song hoá +
-GC rẻ + ít gián tiếp; runtime của bạn không đổi — muốn runtime nhanh thì đó là việc của Bun
-(trục 1) hoặc Go (trục 3).
+Xác minh executable version/origin → typecheck cùng project TS6/TS7 → so diagnostic và declaration emit
+→ đo cold/warm/incremental/build/watch riêng → ghi CPU/RAM/checkers/builders. Runtime Node/Bun/Go
+đo riêng cùng API/SQL/durability. Chỉ chọn TS7+Bun khi tooling tương thích và số đo ứng dụng đạt SLO.

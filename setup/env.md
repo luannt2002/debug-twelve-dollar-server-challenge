@@ -70,7 +70,7 @@ services:
       POSTGRES_PASSWORD: debug12
       POSTGRES_DB: challenge
     ports:
-      - "55432:5432"
+      - "127.0.0.1:55432:5432"
     volumes:
       - ./pgdata:/var/lib/postgresql/data
 YAML
@@ -79,14 +79,16 @@ docker compose -f labs/pg/docker-compose.yml up -d
 psql "postgres://postgres:debug12@127.0.0.1:55432/challenge" -c 'select version();'
 ```
 
-( Nếu chưa có psql client: `docker compose exec app_pg psql -U postgres -d challenge`. )
+( Nếu chưa có psql client: `docker compose -f labs/pg/docker-compose.yml exec app_pg psql -U postgres -d challenge`. )
 
 SQLite: không cần cài — Bun có sẵn `bun:sqlite`, Python có `sqlite3` chuẩn (probe dùng nó).
 
 ## 4. Dựng lại source tham khảo
 
-Theo [repos.md](repos.md): clone các repo cần sang thư mục tools riêng. Repo challenge cần
-lệnh fetch PR refs riêng (đã ghi ở đó).
+Chạy `python3 scripts/setup-sources.py` trong clone sạch để dựng đúng 124 snapshot theo SHA đã audit.
+Repo khác xem [repos.md](repos.md); source nằm local, không commit.
+Toolchain fixture: `npm ci --prefix labs/toolchain`, rồi `python3 scripts/probe-toolchain.py`.
+Script bắt buộc kiểm version; nếu executable báo khác version manifest thì dừng, không gắn nhãn TS7.
 
 ## 5. Chạy lại probe nền (kiểm môi trường sống)
 
@@ -98,7 +100,7 @@ node   scripts/probe-ts-node.mjs
 python3 scripts/probe-toolchain.py    # phiên bản toolchain tại máy
 ```
 
-Kết quả JSON rơi vào `evidence/` — đối chiếu với bản 19/10/2026; lệch cơ chế (không phải lệch
+Các script in JSON ra stdout; lưu bằng `python3 scripts/probe-sqlite.py > evidence/sqlite-probes.json`. Kết quả được lưu vào `evidence/` khi có redirect — đối chiếu với bản 19/10/2026; lệch cơ chế (không phải lệch
 số) thì dừng và ghi lại trước khi dùng docs.
 
 ## 6. An toàn

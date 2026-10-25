@@ -60,3 +60,10 @@ git fetch origin '+refs/pull/*/head:refs/remotes/origin/pr/*'
    ngoài máy gốc — `upstream/` ở đây đã có bản clone chuẩn + PR refs.
 2. Ghi SHA checkout vào evidence khi đọc phần nào để kết luận gì (tái hiện được).
 3. Repo chỉ để **đọc và đối chiếu** — không push lên fork trừ khi có ý định góp PR riêng.
+
+## Go + chi + PostgreSQL
+
+- `go-chi/chi` — https://github.com/go-chi/chi — Go; router/middleware trên net/http.
+- `jackc/pgx` — https://github.com/jackc/pgx — Go; PostgreSQL driver/pool/protocol.
+- SHA đã đọc: `evidence/go-chi-pgx-sources.json`. Clone local vào `upstream/chi`, `upstream/pgx`
+  (gitignored), checkout SHA tương ứng trước đối chiếu report; không chạy build/install tự động.

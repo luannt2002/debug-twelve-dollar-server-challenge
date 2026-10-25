@@ -4,11 +4,11 @@ Dự án **debug và học hiệu năng** từ repo
 [arjaythedev/twelve-dollar-server-challenge](https://github.com/arjaythedev/twelve-dollar-server-challenge):
 hàng trăm người cùng viết một service API (feed / post / like) chạy trên droplet ~$12/tháng —
 1 CPU, SQLite in-process, cấm Redis / PostgreSQL / result cache, cấm đổi schema/index,
-seed 50k user / 500k post / 2M like, đo bằng k6 ở 64k VU. Ai đạt nhiều request/s nhất mà vẫn
-đúng dữ liệu thì thắng.
+seed 50k user / 500k post / 2M like, đo bằng k6 với VU có thời gian nghỉ. Điểm là số VU cao nhất giữ được 5 phút với
+p95 < 500ms, p99 < 1s, lỗi < 1%; 64k là kết quả nguồn video báo cáo, chưa tái đo tại đây.
 
 Mục tiêu của repo này: **rút nguyên lý tối ưu từ các submission top, biến thành mindset debug
-dự án cũ của mình**, với 4 trục chú tâm ghi ở dưới. Audit chính đã hoàn thành ở
+dự án cũ của mình**, với 4 trục chú tâm ghi ở dưới. Kết quả audit và giới hạn phạm vi nằm ở
 [PERFORMANCE-AUDIT.md](PERFORMANCE-AUDIT.md).
 
 Repo này **KHÔNG copy code của repo nào vào git.** Source tham khảo clone ở `upstream/` và
@@ -101,7 +101,28 @@ service đang phục vụ trên cùng máy. Probe chỉ chạy trên fixture t�
 ## Dùng lại ở máy khác
 
 1. Clone repo này.
-2. Mở [setup/repos.md](setup/repos.md) → chọn repo cần → clone sang thư mục tools riêng
-   (không clone vào trong repo này).
+2. Chạy `python3 scripts/setup-sources.py` để dựng source challenge đúng SHA trong manifest
+   vào `upstream/` và `snapshots/` đã gitignore; các repo khác xem [setup/repos.md](setup/repos.md).
 3. Làm theo [setup/env.md](setup/env.md) → dựng bun/go/TS 7/postgres → chạy lại probe.
 4. Bắt đầu đợt mới theo [ROADMAP.md](ROADMAP.md), ghi kết quả theo [PLAN.md](PLAN.md).
+
+## Các submission trọng tâm cần đọc
+
+Đây là danh sách học kỹ thuật, không phải bảng điểm đã tái đo cùng điều kiện. Tất cả nằm trong repo challenge:
+
+| Nhóm | PR | Giá trị cần đọc |
+|---|---|---|
+| TS thực dụng | [4](https://github.com/arjaythedev/twelve-dollar-server-challenge/pull/4), [51](https://github.com/arjaythedev/twelve-dollar-server-challenge/pull/51), [80](https://github.com/arjaythedev/twelve-dollar-server-challenge/pull/80) | Bun.serve, Fastify batching, Elysia use case/repository |
+| TS/native chuyên biệt | [3](https://github.com/arjaythedev/twelve-dollar-server-challenge/pull/3), [102](https://github.com/arjaythedev/twelve-dollar-server-challenge/pull/102), [119](https://github.com/arjaythedev/twelve-dollar-server-challenge/pull/119) | raw TCP, C++ addon, Rust/C FFI; đọc cả finding trước tái dùng |
+| Go thực dụng | [18](https://github.com/arjaythedev/twelve-dollar-server-challenge/pull/18), [99](https://github.com/arjaythedev/twelve-dollar-server-challenge/pull/99) | DB owner/group commit và net/http/pool/query shape |
+| Go chuyên biệt | [52](https://github.com/arjaythedev/twelve-dollar-server-challenge/pull/52), [72](https://github.com/arjaythedev/twelve-dollar-server-challenge/pull/72), [91](https://github.com/arjaythedev/twelve-dollar-server-challenge/pull/91) | packed rows, C arenas, bounded writer; có giới hạn correctness phải kiểm |
+| Native/PHP | [9](https://github.com/arjaythedev/twelve-dollar-server-challenge/pull/9), [19](https://github.com/arjaythedev/twelve-dollar-server-challenge/pull/19), [26](https://github.com/arjaythedev/twelve-dollar-server-challenge/pull/26), [28](https://github.com/arjaythedev/twelve-dollar-server-challenge/pull/28), [32](https://github.com/arjaythedev/twelve-dollar-server-challenge/pull/32) | mmap/cache, io_uring, buffers, checkpoint và Swoole dài hạn |
+
+**TS7 + Bun bổ sung nhau, không bảo đảm runtime nhanh nhất.** TS7 thay compiler/tooling;
+Bun chạy app. So TS7 với service Go như hai runtime là sai thước đo.
+
+## Đào sâu Go + chi + PostgreSQL
+
+Đọc [audit từng luồng Go+chi+pgxpool](reports/GO-CHI-POSTGRES-FLOW-AUDIT.md): router, middleware,
+admission, connection lifecycle, read/write, idempotency/outbox, Batch/COPY, MVCC/vacuum,
+WAL và debug theo triệu chứng. Đây là audit source; benchmark PostgreSQL còn ở roadmap.

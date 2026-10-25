@@ -18,6 +18,8 @@ checks = {}
 checks['ts7_version'] = run([bins/'tsc', '--version'])
 checks['bun_version'] = run([bins/'bun', '--version'])
 checks['ts6_version'] = run([bins/'tsc6', '--version'])
+if checks['ts7_version']['stdout'] != 'Version 7.0.2' or checks['ts6_version']['stdout'] != 'Version 6.0.2':
+    raise SystemExit(json.dumps({'error': 'Compiler version mismatch; cannot label this TS7 evidence', 'versions': checks}, indent=2))
 checks['ts7_valid'] = run([bins/'tsc', '-p', 'tsconfig.json'])
 checks['bun_valid'] = run([bins/'bun', 'run', 'valid.ts'])
 checks['bun_invalid_type'] = run([bins/'bun', 'run', 'invalid.ts'])

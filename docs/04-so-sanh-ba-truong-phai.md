@@ -39,7 +39,7 @@ là cầu hợp lý khi TS không đủ ở một đoạn nóng đo được.
 
 1. Giảm việc mỗi request (query/index/round-trip) — giá rẻ nhất, lợi lớn nhất.
 2. Pattern DB đúng cho engine đang dùng ([docs/05](05-sqlite-sang-postgresql.md)); trên máy ít
-   RAM, PostgreSQL ăn RAM — SQLite "miễn phí" RAM là lợi thế thật của trục 4 phía bên đi.
+   RAM, PostgreSQL ăn RAM — SQLite vẫn dùng page cache, mmap, native heap và kernel memory; lợi thế là không cần process DB server riêng.
 3. A/B runtime (Node vs Bun) cùng code — chỉ đổi khi đo được.
 4. Tách service Go cho đoạn nóng đo được — cuối cùng, khi 1-3 đã khai cạn.
 5. Native/Rust/C++ — chỉ khi profile + latency SLA + năng lực vận hành cùng biện minh
@@ -48,5 +48,5 @@ là cầu hợp lý khi TS không đủ ở một đoạn nóng đo được.
 ## Tóm một dòng
 
 Ba trường phái là ba tầng ghép được: **Bun chạy, TS 7 kiểm, Go giữ phần nền nóng** — "trùm TS"
-là combo đó ở tầng toolchain; còn hệ thống nhanh thật thì luôn bắt đầu từ giảm việc, không bắt
+không có kết luận chung cho mọi ứng dụng; còn hệ thống nhanh thật thì luôn bắt đầu từ giảm việc, không bắt
 đầu từ ngôn ngữ.
